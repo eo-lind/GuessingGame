@@ -10,7 +10,7 @@ namespace GuessingGame
         {
             Console.WriteLine("Choose a difficulty level: Easy, Medium, or Hard");
 
-            string difficulty = Console.ReadLine();
+            string difficulty = Console.ReadLine().ToLower();
 
             int numberOfGuesses = 0;
 
@@ -30,6 +30,7 @@ namespace GuessingGame
                 Console.WriteLine($"correct answer for testing purposes: {secretNumber}");
 
                 Console.WriteLine($"You have {numberOfGuesses} guesses. You are on guess #{i}.");
+                
                 int guess = Int32.Parse(Console.ReadLine());
 
                 if (guess == secretNumber)
