@@ -11,22 +11,26 @@ namespace GuessingGame
             Console.WriteLine("Guess the secret number! ");
             int secretNumber = 42;
 
-            for (int i = 0; i < 4; i++) {
+            for (int i = 0; i < 4; i++)
+            {
 
-            int guess = Int32.Parse(Console.ReadLine());
+                int guess = Int32.Parse(Console.ReadLine());
 
-            if (guess == secretNumber){
-                Console.WriteLine($"You guessed the correct number!");
-                break;
-            } else {
-                 Console.WriteLine("Sorry, wrong number.");
+                if (guess == secretNumber)
+                {
+                    Console.WriteLine($"You guessed the correct number!");
+                    break;
+                }
+                else
+                {
+                    Console.WriteLine($"Sorry, wrong number. This was guess #({i + 1}) of 4.");
+                }
+
             }
 
-            }
-           
         }
     }
-    
+
 }
 
 
