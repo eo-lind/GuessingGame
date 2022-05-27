@@ -60,7 +60,7 @@ namespace GuessingGame
 
             for (int i = 1; i <= numberOfGuesses; i++)
             {
-                Console.WriteLine($"correct answer for testing purposes: {secretNumber}");
+                // Console.WriteLine($"correct answer for testing purposes: {secretNumber}");
 
                 Console.WriteLine($"You have {numberOfGuesses} guesses. You are on guess #{i}.");
 
